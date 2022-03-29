@@ -5,30 +5,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    #region SINGLETON
     public static PlayerController Instance;
-
     private void Awake()
     {
-        if (Instance!=null)
+        if (Instance != null)
         {
             Destroy(Instance);
         }
-
         Instance = this;
-
     }
+    #endregion
 
+    [Header("PLAYER VARIABLES")]
     public Transform xAxis;
     public float speed;
     public float controlSpeed;
     public float minClamp, maxClamp;
     float power = 5;
+
     public CharacterController cControl;
 
     private float _mousePos;
-
-
 
     void Update()
     {

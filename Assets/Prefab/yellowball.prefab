@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2221132493650845032}
   - component: {fileID: 4336689319000407703}
   m_Layer: 0
-  m_Name: yelloeball
+  m_Name: yellowball
   m_TagString: yellow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

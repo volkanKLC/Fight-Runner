@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public enum EnemyColor
 {
     Blue,
@@ -17,6 +17,7 @@ public class EnemyAI : MonoBehaviour
 
     [Header("ENEMY POWER")]
     public int enemyPower;
+    public Text powerTxt;
 
     [Space(10)]
 
@@ -30,6 +31,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
+        powerTxt.text = "POWER : " + enemyPower;
         SelectEnemyColor(selectColor);
     }
     private void SelectEnemyColor(EnemyColor color)
