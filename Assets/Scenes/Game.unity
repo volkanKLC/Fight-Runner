@@ -816,7 +816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xAxis: {fileID: 1053511428}
-  speed: 15
+  speed: 10
   controlSpeed: 75
   minClamp: -4.5
   maxClamp: 4.5
